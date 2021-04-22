@@ -282,10 +282,11 @@
                                 <thead class="bg-gray-300">
                                     <tr>
                                         <th scope="col" class="text-center">#</th>
+                                        <th scope="col" class="text-center">NTN</th>
                                         <th scope="col">Name</th>
+                                        <th scope="col" class="text-center">Company</th>
                                         <th scope="col" class="text-center">Phone</th>
                                         <th scope="col" class="text-center">Email</th>
-                                        <th scope="col" class="text-center">CNIC</th>
                                         <th scope="col" class="text-center">Address</th>
                                         <th scope="col" class="text-center">Action</th>
                                     </tr>
@@ -293,10 +294,11 @@
                                 <tbody>
                                     <tr>
                                         <th scope="row" class="text-center">1</th>
+                                        <td class="text-center">123456-7</td>
                                         <td>Mr.Ahmed</td>
+                                        <td class="text-center">Pel</td>
                                         <td class="text-center">0322841803</td>
                                         <td class="text-center">example@email.com</td>
-                                        <td class="text-center">12345-1234567-0</td>
                                         <td class="text-center">house no 112 block - m mustafabad gulberg - 3</td>
                                         <td class="text-center">
                                             <button type="button" class="btn btn-primary mt-1" data-toggle="modal"
@@ -313,30 +315,11 @@
                                     </tr>
                                     <tr>
                                         <th scope="row" class="text-center">2</th>
-                                        <td>Mr.Saeed</td>
+                                        <td class="text-center">987654-3</td>
+                                        <td>Mr.Ali</td>
+                                        <td class="text-center">Dell</td>
                                         <td class="text-center">0322841803</td>
                                         <td class="text-center">example@email.com</td>
-                                        <td class="text-center">12345-1234567-0</td>
-                                        <td class="text-center">house no 112 block - m mustafabad gulberg - 3</td>
-                                        <td class="text-center">
-                                            <button type="button" class="btn btn-primary mt-1" data-toggle="modal"
-                                                data-target="#paymentUpdateModal">Add Payment</button>
-                                            <button type="button" class="btn btn-primary mt-1" data-toggle="modal"
-                                                data-target="#paymentInfoModal">Payment info</button>
-                                            <a type="button" class="btn btn-primary mt-1" href="./ledger.html">Ledger</a>
-                                            <button type="button" class="btn btn-primary mt-1" data-toggle="modal"
-                                                data-target="#customerUpdateModal">Edit</button>
-                                            <button type="button" class="btn btn-primary mt-1" data-toggle="modal" data-target="#deleteCustomerModal">
-                                                <i class="nav-icon i-Close-Window"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row" class="text-center">3</th>
-                                        <td>Mr.Seemab Ahmed</td>
-                                        <td class="text-center">0322841803</td>
-                                        <td class="text-center">example@email.com</td>
-                                        <td class="text-center">12345-1234567-0</td>
                                         <td class="text-center">house no 112 block - m mustafabad gulberg - 3</td>
                                         <td class="text-center">
                                             <button type="button" class="btn btn-primary mt-1" data-toggle="modal"
@@ -810,10 +793,17 @@
                 </div>
                 <div class="modal-body">
                     <form>
-                        <div class="form-group">
-                            <label for="formGroupExampleInput8">Customer:</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput8"
-                                placeholder="Enter Customer Name">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="ntnNumber">NTN:</label>
+                                <input type="number" class="form-control" id="ntnNumber"
+                                    placeholder="Enter NTN Number">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="customer-name">Name:</label>
+                                <input type="text" class="form-control" id="customer-name"
+                                    placeholder="Enter Customer Name">
+                            </div>
                         </div>
                         <div class="form-group">
                             <label for="formGroupExampleInput9">Company:</label>
@@ -830,7 +820,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="office-email">Office Email:</label>
+                                    <label for="office-email">Email:</label>
                                     <input type="number" class="form-control" id="office-email"
                                         placeholder="Enter Office Phone Number">
                                 </div>
@@ -1338,10 +1328,26 @@
                 </div>
                 <div class="modal-body">
                     <form>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="ntn-number">NTN:</label>
+                                    <input type="number" class="form-control" id="ntn-number"
+                                        placeholder="Enter NTN Number" value="123456-7">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput23">Name:</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput23"
+                                        placeholder="Enter Name" value="Mr. Ahmed">
+                                </div>
+                            </div>
+                        </div>
                         <div class="form-group">
-                            <label for="formGroupExampleInput23">Name:</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput23"
-                                placeholder="Enter Company Name" value="Mr. Ahmed">
+                            <label for="company-name">Company:</label>
+                            <input type="text" class="form-control" id="company-name"
+                                placeholder="Enter Company Name" value="Pel">
                         </div>
                         <div class="row">
                             <div class="col-md-6">
@@ -1358,12 +1364,6 @@
                                         value="example@email.com">
                                 </div>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="cnic-number">CNIC</label>
-                            <input type="text" class="form-control" id="cnic-number"
-                                placeholder="Enter CNIC Number"
-                                value="12345-1234567-0">
                         </div>
                         <div class="form-group">
                             <label for="formGroupExampleInput24">Address</label>
