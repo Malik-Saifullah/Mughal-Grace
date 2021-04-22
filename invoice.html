@@ -157,15 +157,22 @@
                     </li>
                     <li class="nav-item" type="button" data-toggle="modal" data-target="#newOrder">
                         <a class="nav-item-hold" href="#">
-                            <i class="nav-icon i-Data-Upload"></i>
-                            <span class="nav-text">New Buying</span>
+                            <i class="nav-icon i-Checkout-Basket"></i>
+                            <span class="nav-text">Add Buying</span>
+                        </a>
+                        <div class="triangle"></div>
+                    </li>
+                    <li class="nav-item" type="button" data-toggle="modal" data-target="#newCustomerOrder">
+                        <a class="nav-item-hold" href="#">
+                            <i class="nav-icon i-Money-2"></i>
+                            <span class="nav-text">Add Customer Order</span>
                         </a>
                         <div class="triangle"></div>
                     </li>
                     <li class="nav-item" type="button" data-toggle="modal" data-target="#newProduct">
                         <a class="nav-item-hold" href="#">
-                            <i class="nav-icon i-Checkout-Basket"></i>
-                            <span class="nav-text">Add Product</span>
+                            <i class="nav-icon i-Data-Upload"></i>
+                            <span class="nav-text">Add Production</span>
                         </a>
                         <div class="triangle"></div>
                     </li>
@@ -176,17 +183,45 @@
                         </a>
                         <div class="triangle"></div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-item-hold" href="./employee.html">
-                            <i class="nav-icon i-Administrator"></i>
-                            <span class="nav-text">Employee's info</span>
+                    <li class="nav-item" type="button" data-toggle="modal" data-target="#newMerchant">
+                        <a class="nav-item-hold" href="#">
+                            <i class="nav-icon i-Business-Man"></i>
+                            <span class="nav-text">Add Merchant</span>
                         </a>
                         <div class="triangle"></div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-item-hold" href="./billing-history.html">
+                        <a class="nav-item-hold" href="./purchased-stock.html">
+                            <i class="nav-icon i-Checkout-Basket"></i>
+                            <span class="nav-text">Purchased Inventory</span>
+                        </a>
+                        <div class="triangle"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item-hold" href="./customers-order.html">
                             <i class="nav-icon i-Money-2"></i>
-                            <span class="nav-text">Ordered</span>
+                            <span class="nav-text">Customer Ordered</span>
+                        </a>
+                        <div class="triangle"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item-hold" href="./production.html">
+                            <i class="nav-icon i-Data-Upload"></i>
+                            <span class="nav-text">Production Inventory</span>
+                        </a>
+                        <div class="triangle"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item-hold" href="./customers.html">
+                            <i class="nav-icon i-Administrator"></i>
+                            <span class="nav-text">Customers info</span>
+                        </a>
+                        <div class="triangle"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item-hold" href="./merchant.html">
+                            <i class="nav-icon i-Business-Man"></i>
+                            <span class="nav-text">Merchants info</span>
                         </a>
                         <div class="triangle"></div>
                     </li>
@@ -198,23 +233,9 @@
                         <div class="triangle"></div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-item-hold" href="./stock-list.html">
-                            <i class="nav-icon i-Checkout-Basket"></i>
-                            <span class="nav-text">Stock Inventory</span>
-                        </a>
-                        <div class="triangle"></div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-item-hold" href="./customers.html">
+                        <a class="nav-item-hold" href="./employee.html">
                             <i class="nav-icon i-Administrator"></i>
-                            <span class="nav-text">Customer</span>
-                        </a>
-                        <div class="triangle"></div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-item-hold" href="./merchant.html">
-                            <i class="nav-icon i-Business-Man"></i>
-                            <span class="nav-text">Merchant</span>
+                            <span class="nav-text">Employees info</span>
                         </a>
                         <div class="triangle"></div>
                     </li>
@@ -435,7 +456,7 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="newOrderLabel">New Order</h5>
+                    <h5 class="modal-title" id="newOrderLabel">New Buying</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
@@ -443,30 +464,14 @@
                 <div class="modal-body card-body">
                     <form class="card-body">
                         <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="formGroupExampleInput">Serial Number</label>
-                                    <input type="text" class="form-control" id="formGroupExampleInput"
-                                        placeholder="Enter Serial Number">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="formGroupExampleInput2">Product Name</label>
-                                    <input type="text" class="form-control" id="formGroupExampleInput2"
-                                        placeholder="Enter Product Name">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
                             <div class="col-md-9">
                                 <div class="form-group">
-                                    <label for="customerNameList">Select Customer Name</label>
+                                    <label for="customerNameList">Select Merchant</label>
                                     <select id="customerNameList" class="form-control">
-                                        <option>Customer Name</option>
-                                        <option>Customer 1</option>
-                                        <option>Customer 2</option>
-                                        <option>Customer 3</option>
+                                        <option>Merchant Name</option>
+                                        <option>Merchant 1</option>
+                                        <option>Merchant 2</option>
+                                        <option>Merchant 3</option>
                                     </select>
                                 </div>
                             </div>
@@ -478,7 +483,7 @@
                                     <button class="d-block btn btn-primary ml-auto" type="button" data-toggle="collapse"
                                         data-target="#collapseExample" aria-expanded="false"
                                         aria-controls="collapseExample">
-                                        Add Customer
+                                        Add Merchant
                                     </button>
                                 </div>
                             </div>
@@ -489,33 +494,33 @@
                                     <div class="card card-body">
                                         <div class="card-body">
                                             <div class="form-group">
-                                                <label for="formGroupExampleInput3">Customer:</label>
-                                                <input type="text" class="form-control" id="formGroupExampleInput3"
-                                                    placeholder="Enter Customer Name">
+                                                <label for="formGroupExampleInput4">Merchant Name:*</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput4"
+                                                    placeholder="Enter Merchant Name">
                                             </div>
                                             <div class="form-group">
-                                                <label for="formGroupExampleInput4">Company:</label>
-                                                <input type="text" class="form-control" id="formGroupExampleInput4"
-                                                    placeholder="Enter Company Name">
+                                                <label for="phone-1">CNIC Number:</label>
+                                                <input type="number" class="form-control" id="phone-1"
+                                                    placeholder="Enter CNIC Number">
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label for="phone-1">Phone:</label>
-                                                        <input type="number" class="form-control" id="phone-1"
+                                                        <label for="officePhone">Phone:*</label>
+                                                        <input type="tel" class="form-control" id="officePhone"
                                                             placeholder="Enter Phone Number">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label for="officePhone">Office Phone:</label>
-                                                        <input type="number" class="form-control" id="officePhone"
-                                                            placeholder="Enter Office Phone Number">
+                                                        <label for="formGroupExampleInput3">Email:*</label>
+                                                        <input type="email" class="form-control" id="formGroupExampleInput3"
+                                                            placeholder="Enter Email Address">
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label for="formGroupExampleInput5">Address</label>
+                                                <label for="formGroupExampleInput5">Address:*</label>
                                                 <input type="text" class="form-control" id="formGroupExampleInput5"
                                                     placeholder="Enter Company Address">
                                             </div>
@@ -527,10 +532,75 @@
                                             <button class="btn btn-primary" type="button" data-toggle="collapse"
                                                 data-target="#collapseExample" aria-expanded="false"
                                                 aria-controls="collapseExample">
-                                                Add Customer
+                                                Add Merchant
                                             </button>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput">Product Name:</label>
+                                    <select id="formGroupExampleInput" class="form-control">
+                                        <option>Yarn</option>
+                                        <option>Niddles</option>
+                                        <option>Product 1</option>
+                                        <option>Product 2</option>
+                                        <option>Product 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput2">Product Type</label>
+                                    <select id="formGroupExampleInput2" class="form-control">
+                                        <option>Nylone</option>
+                                        <option>Cotton</option>
+                                        <option>Polyster</option>
+                                        <option>Type 1</option>
+                                        <option>Type 2</option>
+                                        <option>Type 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="lot-number-1">Lot Number:</label>
+                                    <input type="number" class="form-control" id="lot-number-1"
+                                        placeholder="Enter Lot Number">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="color">Select Color:</label>
+                                    <select id="color" class="form-control">
+                                        <option>Select Color</option>
+                                        <option>Black</option>
+                                        <option>White</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="form-group">
+                                    <label for="box-weight-1">Box Weight:</label>
+                                    <input type="number" class="form-control" id="box-weight-1"
+                                        placeholder="Enter Box Weight">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="weight-type-1">Select Weight Type:</label>
+                                    <select id="weight-type-1" class="form-control">
+                                        <option>Kgs / Pounds</option>
+                                        <option>Kgs</option>
+                                        <option>Pounds</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
@@ -579,26 +649,67 @@
                                             <ul role="tablist" class="nav bg-light nav-pills nav-fill mb-3"
                                                 style="border-radius: 30px;">
                                                 <li class="nav-item">
-                                                    <a data-toggle="pill" href="#nav-tab-card" class="nav-link active"
+                                                    <a data-toggle="pill" href="#nav-tab-paypal" class="nav-link active"
                                                         style="border-radius: 30px;">
-                                                        <i class="fas fa-money-check-alt text-dark"
-                                                            aria-hidden="true"></i>
-                                                        Online Transfer
+                                                        Cash
                                                     </a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a data-toggle="pill" href="#nav-tab-paypal" class="nav-link"
+                                                    <a data-toggle="pill" href="#nav-tab-cheque" class="nav-link"
                                                         style="border-radius: 30px;">
-                                                        <i class="fas fa-money-bill-alt text-dark"
-                                                            aria-hidden="true"></i>
-                                                        Cash
+                                                        Cheque
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a data-toggle="pill" href="#nav-tab-card" class="nav-link"
+                                                        style="border-radius: 30px;">
+                                                        Bank Transfer
                                                     </a>
                                                 </li>
                                             </ul>
                                             <div class="tab-content">
 
+                                                <!-- cheque info -->
+                                                <div id="nav-tab-cheque" class="tab-pane fade">
+                                                    <div class="form-group mb-5">
+                                                        <label data-toggle="tooltip">Cheque From:
+                                                        </label>
+                                                        <input type="text" required="" class="form-control"
+                                                            name="chequeFrom">
+                                                    </div>
+                                                    <div class="form-group mb-5">
+                                                        <label data-toggle="tooltip">Cheque Number:
+                                                        </label>
+                                                        <input type="number" required="" class="form-control"
+                                                            name="chequeNumber">
+                                                    </div>
+                                                    <div class="form-group mb-5">
+                                                        <label data-toggle="tooltip">Cheque To:
+                                                        </label>
+                                                        <input type="text" required="" class="form-control"
+                                                            name="chequeTo">
+                                                    </div>
+                                                    <div class="form-group mb-5">
+                                                        <label data-toggle="tooltip">Amount:
+                                                        </label>
+                                                        <input type="text" required="" class="form-control"
+                                                            name="chequeAmount">
+                                                    </div>
+                                                    <div class="form-group mb-5">
+                                                        <label data-toggle="tooltip">Amount:
+                                                        </label>
+                                                        <input type="file" required="" class="form-control"
+                                                            name="chequeAmount">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="order-datepicker">Date:</label>
+                                                        <input id="order-datepicker" class="form-control picker__input" placeholder="dd-mm-yyyy" name="dp" readonly="" aria-haspopup="true" aria-expanded="false" aria-readonly="false" aria-owns="order-datepicker_root"><div class="picker" id="order-datepicker_root" aria-hidden="true"><div class="picker__holder" tabindex="-1"><div class="picker__frame"><div class="picker__wrap"><div class="picker__box"><div class="picker__header"><div class="picker__month">April</div><div class="picker__year">2021</div><div class="picker__nav--prev" data-nav="-1" role="button" aria-controls="order-datepicker_table" title="Previous month"> </div><div class="picker__nav--next" data-nav="1" role="button" aria-controls="order-datepicker_table" title="Next month"> </div></div><table class="picker__table" id="order-datepicker_table" role="grid" aria-controls="order-datepicker" aria-readonly="true"><thead><tr><th class="picker__weekday" scope="col" title="Sunday">Sun</th><th class="picker__weekday" scope="col" title="Monday">Mon</th><th class="picker__weekday" scope="col" title="Tuesday">Tue</th><th class="picker__weekday" scope="col" title="Wednesday">Wed</th><th class="picker__weekday" scope="col" title="Thursday">Thu</th><th class="picker__weekday" scope="col" title="Friday">Fri</th><th class="picker__weekday" scope="col" title="Saturday">Sat</th></tr></thead><tbody><tr><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1616871600000" role="gridcell" aria-label="28 March, 2021">28</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1616958000000" role="gridcell" aria-label="29 March, 2021">29</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1617044400000" role="gridcell" aria-label="30 March, 2021">30</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1617130800000" role="gridcell" aria-label="31 March, 2021">31</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1617217200000" role="gridcell" aria-label="1 April, 2021">1</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1617303600000" role="gridcell" aria-label="2 April, 2021">2</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1617390000000" role="gridcell" aria-label="3 April, 2021">3</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1617476400000" role="gridcell" aria-label="4 April, 2021">4</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1617562800000" role="gridcell" aria-label="5 April, 2021">5</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1617649200000" role="gridcell" aria-label="6 April, 2021">6</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1617735600000" role="gridcell" aria-label="7 April, 2021">7</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1617822000000" role="gridcell" aria-label="8 April, 2021">8</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1617908400000" role="gridcell" aria-label="9 April, 2021">9</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1617994800000" role="gridcell" aria-label="10 April, 2021">10</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1618081200000" role="gridcell" aria-label="11 April, 2021">11</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1618167600000" role="gridcell" aria-label="12 April, 2021">12</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1618254000000" role="gridcell" aria-label="13 April, 2021">13</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1618340400000" role="gridcell" aria-label="14 April, 2021">14</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1618426800000" role="gridcell" aria-label="15 April, 2021">15</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1618513200000" role="gridcell" aria-label="16 April, 2021">16</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1618599600000" role="gridcell" aria-label="17 April, 2021">17</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1618686000000" role="gridcell" aria-label="18 April, 2021">18</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1618772400000" role="gridcell" aria-label="19 April, 2021">19</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1618858800000" role="gridcell" aria-label="20 April, 2021">20</div></td><td role="presentation"><div class="picker__day picker__day--infocus picker__day--today picker__day--highlighted" data-pick="1618945200000" role="gridcell" aria-label="21 April, 2021" aria-activedescendant="true">21</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1619031600000" role="gridcell" aria-label="22 April, 2021">22</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1619118000000" role="gridcell" aria-label="23 April, 2021">23</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1619204400000" role="gridcell" aria-label="24 April, 2021">24</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1619290800000" role="gridcell" aria-label="25 April, 2021">25</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1619377200000" role="gridcell" aria-label="26 April, 2021">26</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1619463600000" role="gridcell" aria-label="27 April, 2021">27</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1619550000000" role="gridcell" aria-label="28 April, 2021">28</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1619636400000" role="gridcell" aria-label="29 April, 2021">29</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1619722800000" role="gridcell" aria-label="30 April, 2021">30</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1619809200000" role="gridcell" aria-label="1 May, 2021">1</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1619895600000" role="gridcell" aria-label="2 May, 2021">2</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1619982000000" role="gridcell" aria-label="3 May, 2021">3</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1620068400000" role="gridcell" aria-label="4 May, 2021">4</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1620154800000" role="gridcell" aria-label="5 May, 2021">5</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1620241200000" role="gridcell" aria-label="6 May, 2021">6</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1620327600000" role="gridcell" aria-label="7 May, 2021">7</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1620414000000" role="gridcell" aria-label="8 May, 2021">8</div></td></tr></tbody></table><div class="picker__footer"><button class="picker__button--today" type="button" data-pick="1618945200000" disabled="" aria-controls="order-datepicker">Today</button><button class="picker__button--clear" type="button" data-clear="1" disabled="" aria-controls="order-datepicker">Clear</button><button class="picker__button--close" type="button" data-close="true" disabled="" aria-controls="order-datepicker">Close</button></div></div></div></div></div></div>
+                                                    </div>
+                                                </div>
+                                                <!-- End -->
+
                                                 <!-- credit card info-->
-                                                <div id="nav-tab-card" class="tab-pane fade show active">
+                                                <div id="nav-tab-card" class="tab-pane fade">
                                                     <div class="form-group">
                                                         <label for="username">Account Title</label>
                                                         <input type="text" name="title" placeholder="Account Title"
@@ -623,11 +734,15 @@
                                                             class="form-control" required=""
                                                             style="margin-bottom: 0px !important;">
                                                     </div>
+                                                    <div class="form-group mb-3">
+                                                        <label for="order-datepicker">Date</label>
+                                                        <input id="order-datepicker" class="form-control picker__input" placeholder="dd-mm-yyyy" name="dp" readonly="" aria-haspopup="true" aria-expanded="false" aria-readonly="false" aria-owns="order-datepicker_root"><div class="picker" id="order-datepicker_root" aria-hidden="true"><div class="picker__holder" tabindex="-1"><div class="picker__frame"><div class="picker__wrap"><div class="picker__box"><div class="picker__header"><div class="picker__month">April</div><div class="picker__year">2021</div><div class="picker__nav--prev" data-nav="-1" role="button" aria-controls="order-datepicker_table" title="Previous month"> </div><div class="picker__nav--next" data-nav="1" role="button" aria-controls="order-datepicker_table" title="Next month"> </div></div><table class="picker__table" id="order-datepicker_table" role="grid" aria-controls="order-datepicker" aria-readonly="true"><thead><tr><th class="picker__weekday" scope="col" title="Sunday">Sun</th><th class="picker__weekday" scope="col" title="Monday">Mon</th><th class="picker__weekday" scope="col" title="Tuesday">Tue</th><th class="picker__weekday" scope="col" title="Wednesday">Wed</th><th class="picker__weekday" scope="col" title="Thursday">Thu</th><th class="picker__weekday" scope="col" title="Friday">Fri</th><th class="picker__weekday" scope="col" title="Saturday">Sat</th></tr></thead><tbody><tr><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1616871600000" role="gridcell" aria-label="28 March, 2021">28</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1616958000000" role="gridcell" aria-label="29 March, 2021">29</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1617044400000" role="gridcell" aria-label="30 March, 2021">30</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1617130800000" role="gridcell" aria-label="31 March, 2021">31</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1617217200000" role="gridcell" aria-label="1 April, 2021">1</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1617303600000" role="gridcell" aria-label="2 April, 2021">2</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1617390000000" role="gridcell" aria-label="3 April, 2021">3</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1617476400000" role="gridcell" aria-label="4 April, 2021">4</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1617562800000" role="gridcell" aria-label="5 April, 2021">5</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1617649200000" role="gridcell" aria-label="6 April, 2021">6</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1617735600000" role="gridcell" aria-label="7 April, 2021">7</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1617822000000" role="gridcell" aria-label="8 April, 2021">8</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1617908400000" role="gridcell" aria-label="9 April, 2021">9</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1617994800000" role="gridcell" aria-label="10 April, 2021">10</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1618081200000" role="gridcell" aria-label="11 April, 2021">11</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1618167600000" role="gridcell" aria-label="12 April, 2021">12</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1618254000000" role="gridcell" aria-label="13 April, 2021">13</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1618340400000" role="gridcell" aria-label="14 April, 2021">14</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1618426800000" role="gridcell" aria-label="15 April, 2021">15</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1618513200000" role="gridcell" aria-label="16 April, 2021">16</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1618599600000" role="gridcell" aria-label="17 April, 2021">17</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1618686000000" role="gridcell" aria-label="18 April, 2021">18</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1618772400000" role="gridcell" aria-label="19 April, 2021">19</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1618858800000" role="gridcell" aria-label="20 April, 2021">20</div></td><td role="presentation"><div class="picker__day picker__day--infocus picker__day--today picker__day--highlighted" data-pick="1618945200000" role="gridcell" aria-label="21 April, 2021" aria-activedescendant="true">21</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1619031600000" role="gridcell" aria-label="22 April, 2021">22</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1619118000000" role="gridcell" aria-label="23 April, 2021">23</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1619204400000" role="gridcell" aria-label="24 April, 2021">24</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1619290800000" role="gridcell" aria-label="25 April, 2021">25</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1619377200000" role="gridcell" aria-label="26 April, 2021">26</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1619463600000" role="gridcell" aria-label="27 April, 2021">27</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1619550000000" role="gridcell" aria-label="28 April, 2021">28</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1619636400000" role="gridcell" aria-label="29 April, 2021">29</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1619722800000" role="gridcell" aria-label="30 April, 2021">30</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1619809200000" role="gridcell" aria-label="1 May, 2021">1</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1619895600000" role="gridcell" aria-label="2 May, 2021">2</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1619982000000" role="gridcell" aria-label="3 May, 2021">3</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1620068400000" role="gridcell" aria-label="4 May, 2021">4</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1620154800000" role="gridcell" aria-label="5 May, 2021">5</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1620241200000" role="gridcell" aria-label="6 May, 2021">6</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1620327600000" role="gridcell" aria-label="7 May, 2021">7</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1620414000000" role="gridcell" aria-label="8 May, 2021">8</div></td></tr></tbody></table><div class="picker__footer"><button class="picker__button--today" type="button" data-pick="1618945200000" disabled="" aria-controls="order-datepicker">Today</button><button class="picker__button--clear" type="button" data-clear="1" disabled="" aria-controls="order-datepicker">Clear</button><button class="picker__button--close" type="button" data-close="true" disabled="" aria-controls="order-datepicker">Close</button></div></div></div></div></div></div>
+                                                    </div>
                                                 </div>
                                                 <!-- End -->
 
                                                 <!-- Paypal info -->
-                                                <div id="nav-tab-paypal" class="tab-pane fade">
+                                                <div id="nav-tab-paypal" class="tab-pane fade show active">
                                                     <div class="form-group mb-5">
                                                         <label data-toggle="tooltip">Name
                                                         </label>
@@ -639,6 +754,25 @@
                                                         </label>
                                                         <input type="text" required="" class="form-control"
                                                             name="amount">
+                                                    </div>
+                                                    <div class="form-group mb-3">
+                                                        <label for="order-datepicker">Date</label>
+                                                        <input id="order-datepicker" class="form-control picker__input" placeholder="dd-mm-yyyy" name="dp" readonly="" aria-haspopup="true" aria-expanded="false" aria-readonly="false" aria-owns="order-datepicker_root"><div class="picker" id="order-datepicker_root" aria-hidden="true"><div class="picker__holder" tabindex="-1"><div class="picker__frame"><div class="picker__wrap"><div class="picker__box"><div class="picker__header"><div class="picker__month">April</div><div class="picker__year">2021</div><div class="picker__nav--prev" data-nav="-1" role="button" aria-controls="order-datepicker_table" title="Previous month"> </div><div class="picker__nav--next" data-nav="1" role="button" aria-controls="order-datepicker_table" title="Next month"> </div></div><table class="picker__table" id="order-datepicker_table" role="grid" aria-controls="order-datepicker" aria-readonly="true"><thead><tr><th class="picker__weekday" scope="col" title="Sunday">Sun</th><th class="picker__weekday" scope="col" title="Monday">Mon</th><th class="picker__weekday" scope="col" title="Tuesday">Tue</th><th class="picker__weekday" scope="col" title="Wednesday">Wed</th><th class="picker__weekday" scope="col" title="Thursday">Thu</th><th class="picker__weekday" scope="col" title="Friday">Fri</th><th class="picker__weekday" scope="col" title="Saturday">Sat</th></tr></thead><tbody><tr><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1616871600000" role="gridcell" aria-label="28 March, 2021">28</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1616958000000" role="gridcell" aria-label="29 March, 2021">29</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1617044400000" role="gridcell" aria-label="30 March, 2021">30</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1617130800000" role="gridcell" aria-label="31 March, 2021">31</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1617217200000" role="gridcell" aria-label="1 April, 2021">1</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1617303600000" role="gridcell" aria-label="2 April, 2021">2</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1617390000000" role="gridcell" aria-label="3 April, 2021">3</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1617476400000" role="gridcell" aria-label="4 April, 2021">4</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1617562800000" role="gridcell" aria-label="5 April, 2021">5</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1617649200000" role="gridcell" aria-label="6 April, 2021">6</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1617735600000" role="gridcell" aria-label="7 April, 2021">7</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1617822000000" role="gridcell" aria-label="8 April, 2021">8</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1617908400000" role="gridcell" aria-label="9 April, 2021">9</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1617994800000" role="gridcell" aria-label="10 April, 2021">10</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1618081200000" role="gridcell" aria-label="11 April, 2021">11</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1618167600000" role="gridcell" aria-label="12 April, 2021">12</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1618254000000" role="gridcell" aria-label="13 April, 2021">13</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1618340400000" role="gridcell" aria-label="14 April, 2021">14</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1618426800000" role="gridcell" aria-label="15 April, 2021">15</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1618513200000" role="gridcell" aria-label="16 April, 2021">16</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1618599600000" role="gridcell" aria-label="17 April, 2021">17</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1618686000000" role="gridcell" aria-label="18 April, 2021">18</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1618772400000" role="gridcell" aria-label="19 April, 2021">19</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1618858800000" role="gridcell" aria-label="20 April, 2021">20</div></td><td role="presentation"><div class="picker__day picker__day--infocus picker__day--today picker__day--highlighted" data-pick="1618945200000" role="gridcell" aria-label="21 April, 2021" aria-activedescendant="true">21</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1619031600000" role="gridcell" aria-label="22 April, 2021">22</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1619118000000" role="gridcell" aria-label="23 April, 2021">23</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1619204400000" role="gridcell" aria-label="24 April, 2021">24</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1619290800000" role="gridcell" aria-label="25 April, 2021">25</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1619377200000" role="gridcell" aria-label="26 April, 2021">26</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1619463600000" role="gridcell" aria-label="27 April, 2021">27</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1619550000000" role="gridcell" aria-label="28 April, 2021">28</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1619636400000" role="gridcell" aria-label="29 April, 2021">29</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1619722800000" role="gridcell" aria-label="30 April, 2021">30</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1619809200000" role="gridcell" aria-label="1 May, 2021">1</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1619895600000" role="gridcell" aria-label="2 May, 2021">2</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1619982000000" role="gridcell" aria-label="3 May, 2021">3</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1620068400000" role="gridcell" aria-label="4 May, 2021">4</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1620154800000" role="gridcell" aria-label="5 May, 2021">5</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1620241200000" role="gridcell" aria-label="6 May, 2021">6</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1620327600000" role="gridcell" aria-label="7 May, 2021">7</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1620414000000" role="gridcell" aria-label="8 May, 2021">8</div></td></tr></tbody></table><div class="picker__footer"><button class="picker__button--today" type="button" data-pick="1618945200000" disabled="" aria-controls="order-datepicker">Today</button><button class="picker__button--clear" type="button" data-clear="1" disabled="" aria-controls="order-datepicker">Clear</button><button class="picker__button--close" type="button" data-close="true" disabled="" aria-controls="order-datepicker">Close</button></div></div></div></div></div></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <h4 class="card-title mb-3">Payment Category</h4>
+                                                            <label class="radio radio-warning">
+                                                                <input type="radio" name="radio" value="3">
+                                                                <span>Debit</span>
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                            <label class="radio radio-success">
+                                                                <input type="radio" name="radio" value="2">
+                                                                <span>Credit</span>
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <!-- End -->
@@ -658,21 +792,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h4 class="card-title mb-3">Delivery Status</h4>
-                                <label class="radio radio-warning">
-                                    <input type="radio" name="radio" value="3">
-                                    <span>Not Delivered</span>
-                                    <span class="checkmark"></span>
-                                </label>
-                                <label class="radio radio-success">
-                                    <input type="radio" name="radio" value="2">
-                                    <span>Delivered</span>
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                        </div>
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -687,7 +806,7 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="newProductLabel">New Product</h5>
+                    <h5 class="modal-title" id="newProductLabel">New Daily Production</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
@@ -697,20 +816,11 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="formGroupExampleInput6">Serial Number</label>
-                                    <input type="text" class="form-control" id="formGroupExampleInput6"
-                                        placeholder="Enter Serial Number">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
                                     <label for="formGroupExampleInput7">Product Name</label>
                                     <input type="text" class="form-control" id="formGroupExampleInput7"
                                         placeholder="Enter Product Name">
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="quantity-2">Quantity</label>
@@ -718,12 +828,45 @@
                                         placeholder="Enter quantity">
                                 </div>
                             </div>
+                        </div>
+                        <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="per-price-2">Price Per Quantity</label>
-                                    <input type="number" class="form-control" id="per-price-2" placeholder="Enter Price Per Quantity">
+                                    <label for="warehouse-id">Warehouse ID</label>
+                                    <input type="number" class="form-control" id="warehouse-id"
+                                        placeholder="Enter Warehouse ID">
                                 </div>
                             </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="form-group">
+                                            <label for="customerName">
+                                                <p class="m-0">Daying</p>
+                                            </label>
+                                            <label class="checkbox checkbox-dark mt-2">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <div class="form-group">
+                                            <label for="color-1">Select Product Color</label>
+                                            <select id="color-1" class="form-control">
+                                                <option>Product Color</option>
+                                                <option>White</option>
+                                                <option>Black</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" class="form-control" id="date"
+                                placeholder="Enter Date">
                         </div>
                     </form>
                 </div>
@@ -845,6 +988,57 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="newMerchant" tabindex="-1" role="dialog"
+        aria-labelledby="newMerchantLabel" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="newMerchantLabel">Add Merchant</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="merchantName">Name:</label>
+                            <input type="text" class="form-control" id="merchantName"
+                                placeholder="Enter Merchant Name">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="merchantPhoneNumber">Phone:</label>
+                                    <input type="number" class="form-control" id="merchantPhoneNumber"
+                                        placeholder="Enter Phone Number">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="merchantEmail">Email:</label>
+                                    <input type="email" class="form-control" id="merchantEmail" placeholder="Enter Office Email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="merchant-cnic-number">CNIC</label>
+                            <input type="text" class="form-control" id="merchant-cnic-number"
+                                placeholder="Enter CNIC Number">
+                        </div>
+                        <div class="form-group">
+                            <label for="merchantAddress">Address</label>
+                            <input type="text" class="form-control" id="merchantAddress"
+                                placeholder="Enter Company Address">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Add Merchant</button>
                 </div>
             </div>
         </div>
@@ -1123,28 +1317,12 @@
                 <div class="modal-body">
                     <form>
                         <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="formGroupExampleInput19">Serial Number</label>
-                                    <input type="text" class="form-control" id="formGroupExampleInput19"
-                                        placeholder="Enter Serial Number" value="V-11">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="quantity-3">Quantity</label>
-                                    <input type="number" class="form-control" id="quantity-3"
-                                        placeholder="Enter quantity" value="22">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
                             <div class="col-md-9">
                                 <div class="form-group">
                                     <label for="updateCustomerNameList">Select Customer Name</label>
                                     <select id="updateCustomerNameList" class="form-control" disabled style="cursor: no-drop;">
                                         <option>Customer Name</option>
-                                        <option selected>Aslam</option>
+                                        <option selected>Pel</option>
                                         <option>Nadeem</option>
                                         <option>Customer 3</option>
                                     </select>
@@ -1156,8 +1334,8 @@
                                         <p class="m-0"></p>
                                     </label>
                                     <button class="d-block btn btn-primary ml-auto" type="button" data-toggle="collapse"
-                                        data-target="#disabledCollapseExample" aria-expanded="false"
-                                        aria-controls="disabledCollapseExample" disabled style="cursor: no-drop;">
+                                        data-target="#customerDisabledCollapseExample" aria-expanded="false"
+                                        aria-controls="customerDisabledCollapseExample" disabled style="cursor: no-drop;">
                                         Add Customer
                                     </button>
                                 </div>
@@ -1165,39 +1343,40 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="collapse" id="disabledCollapseExample">
+                                <div class="collapse" id="customerDisabledCollapseExample">
                                     <div class="card card-body">
                                         <div class="card-body">
-                                            <div class="form-group">
-                                                <label for="formGroupExampleInput20">Customer:</label>
-                                                <input type="text" class="form-control" id="formGroupExampleInput20"
-                                                    placeholder="Enter Customer Name">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label for="ntnNumber">NTN:</label>
+                                                    <input type="number" class="form-control" id="ntnNumber" placeholder="Enter NTN Number">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="customer-name">Name:</label>
+                                                    <input type="text" class="form-control" id="customer-name" placeholder="Enter Customer Name">
+                                                </div>
                                             </div>
                                             <div class="form-group">
-                                                <label for="formGroupExampleInput21">Company:</label>
-                                                <input type="text" class="form-control" id="formGroupExampleInput21"
-                                                    placeholder="Enter Company Name">
+                                                <label for="formGroupExampleInput9">Company:</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput9" placeholder="Enter Company Name">
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label for="phone-5">Phone:</label>
-                                                        <input type="number" class="form-control" id="phone-5"
-                                                            placeholder="Enter Phone Number">
+                                                        <label for="phone-2">Phone:</label>
+                                                        <input type="number" class="form-control" id="phone-2" placeholder="Enter Phone Number">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label for="officePhone-1">Office Phone:</label>
-                                                        <input type="number" class="form-control" id="officePhone-1"
-                                                            placeholder="Enter Office Phone Number">
+                                                        <label for="office-email">Email:</label>
+                                                        <input type="number" class="form-control" id="office-email" placeholder="Enter Office Phone Number">
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label for="formGroupExampleInput22">Address</label>
-                                                <input type="text" class="form-control" id="formGroupExampleInput22"
-                                                    placeholder="Enter Company Address">
+                                                <label for="formGroupExampleInput10">Address</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput10" placeholder="Enter Company Address">
                                             </div>
                                             <button class="btn btn-secondary" type="button" data-toggle="collapse"
                                                 data-target="#collapseExample" aria-expanded="false"
@@ -1209,6 +1388,44 @@
                                                 aria-controls="collapseExample">
                                                 Add Customer
                                             </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="updateCustomerNameList">Select Product Name</label>
+                                    <select id="updateCustomerNameList" class="form-control">
+                                        <option>Product Name</option>
+                                        <option selected>Niddle</option>
+                                        <option>Product 2</option>
+                                        <option>Product 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="form-group">
+                                            <label for="customerName">
+                                                <p class="m-0">Daying</p>
+                                            </label>
+                                            <label class="checkbox checkbox-dark mt-2">
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <div class="form-group">
+                                            <label for="color-1">Select Product Color</label>
+                                            <select id="color-1" class="form-control">
+                                                <option>Product Color</option>
+                                                <option selected>White</option>
+                                                <option>Black</option>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
@@ -1404,7 +1621,7 @@
                                 <div class="form-group">
                                     <label for="formGroupExampleInput25">Serial Number:</label>
                                     <input type="text" class="form-control" id="formGroupExampleInput25"
-                                        placeholder="Enter Product Serial Number" value="Q-11">
+                                        placeholder="Enter Product Serial Number" value="Q-11" disabled>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -1419,22 +1636,40 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="quantity-4">Quantity:</label>
-                                    <input type="number" class="form-control" id="quantity-4"
+                                    <input type="text" class="form-control" id="quantity-4"
                                         placeholder="Enter Product Quantity" value="22">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="perPrice">Price Per Quantity (Rs):</label>
-                                    <input type="number" class="form-control" id="perPrice"
-                                        placeholder="Enter Per Quantity Price" value="1600">
+                                    <label for="warehouseID">Warehouse ID:</label>
+                                    <input type="text" class="form-control" id="warehouseID"
+                                        placeholder="Enter Warehouse ID" value="PG-11">
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label for="total-price">Total Price (Rs):</label>
-                            <input type="number" class="form-control" id="total-price"
-                                placeholder="Enter Total Price" value="4600">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="color-1">Select Product Color</label>
+                                    <select id="color-1" class="form-control">
+                                        <option>Product Color</option>
+                                        <option>White</option>
+                                        <option selected>Black</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="customerName">
+                                        <p class="m-0">Daying</p>
+                                    </label>
+                                    <label class="checkbox checkbox-dark mt-2">
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                     </form>
                 </div>

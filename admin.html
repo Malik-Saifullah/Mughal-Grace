@@ -159,15 +159,22 @@
                     </li>
                     <li class="nav-item" type="button" data-toggle="modal" data-target="#newOrder">
                         <a class="nav-item-hold" href="#">
-                            <i class="nav-icon i-Data-Upload"></i>
-                            <span class="nav-text">New Buying</span>
+                            <i class="nav-icon i-Checkout-Basket"></i>
+                            <span class="nav-text">Add Buying</span>
+                        </a>
+                        <div class="triangle"></div>
+                    </li>
+                    <li class="nav-item" type="button" data-toggle="modal" data-target="#newCustomerOrder">
+                        <a class="nav-item-hold" href="#">
+                            <i class="nav-icon i-Money-2"></i>
+                            <span class="nav-text">Add Customer Order</span>
                         </a>
                         <div class="triangle"></div>
                     </li>
                     <li class="nav-item" type="button" data-toggle="modal" data-target="#newProduct">
                         <a class="nav-item-hold" href="#">
-                            <i class="nav-icon i-Checkout-Basket"></i>
-                            <span class="nav-text">Add Product</span>
+                            <i class="nav-icon i-Data-Upload"></i>
+                            <span class="nav-text">Add Production</span>
                         </a>
                         <div class="triangle"></div>
                     </li>
@@ -178,17 +185,45 @@
                         </a>
                         <div class="triangle"></div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-item-hold" href="./employee.html">
-                            <i class="nav-icon i-Administrator"></i>
-                            <span class="nav-text">Employee's info</span>
+                    <li class="nav-item" type="button" data-toggle="modal" data-target="#newMerchant">
+                        <a class="nav-item-hold" href="#">
+                            <i class="nav-icon i-Business-Man"></i>
+                            <span class="nav-text">Add Merchant</span>
                         </a>
                         <div class="triangle"></div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-item-hold" href="./billing-history.html">
+                        <a class="nav-item-hold" href="./purchased-stock.html">
+                            <i class="nav-icon i-Checkout-Basket"></i>
+                            <span class="nav-text">Purchased Inventory</span>
+                        </a>
+                        <div class="triangle"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item-hold" href="./customers-order.html">
                             <i class="nav-icon i-Money-2"></i>
-                            <span class="nav-text">Ordered</span>
+                            <span class="nav-text">Customer Ordered</span>
+                        </a>
+                        <div class="triangle"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item-hold" href="./production.html">
+                            <i class="nav-icon i-Data-Upload"></i>
+                            <span class="nav-text">Production Inventory</span>
+                        </a>
+                        <div class="triangle"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item-hold" href="./customers.html">
+                            <i class="nav-icon i-Administrator"></i>
+                            <span class="nav-text">Customers info</span>
+                        </a>
+                        <div class="triangle"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item-hold" href="./merchant.html">
+                            <i class="nav-icon i-Business-Man"></i>
+                            <span class="nav-text">Merchants info</span>
                         </a>
                         <div class="triangle"></div>
                     </li>
@@ -200,23 +235,9 @@
                         <div class="triangle"></div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-item-hold" href="./stock-list.html">
-                            <i class="nav-icon i-Checkout-Basket"></i>
-                            <span class="nav-text">Stock Inventory</span>
-                        </a>
-                        <div class="triangle"></div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-item-hold" href="./customers.html">
+                        <a class="nav-item-hold" href="./employee.html">
                             <i class="nav-icon i-Administrator"></i>
-                            <span class="nav-text">Customer</span>
-                        </a>
-                        <div class="triangle"></div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-item-hold" href="./merchant.html">
-                            <i class="nav-icon i-Business-Man"></i>
-                            <span class="nav-text">Merchant</span>
+                            <span class="nav-text">Employees info</span>
                         </a>
                         <div class="triangle"></div>
                     </li>
@@ -246,7 +267,7 @@
                     <div style="cursor: pointer;" class="card card-icon mb-4" type="button" data-toggle="modal"
                     data-target="#newOrder">
                         <div class="card-body text-center">
-                            <i class="i-Data-Upload"></i>
+                            <i class="i-Checkout-Basket"></i>
                             <p class="text-muted mt-2 mb-2"></p>
                             <p class="lead text-22 m-0">New Buying</p>
                         </div>
@@ -254,11 +275,21 @@
                 </div>
                 <div class="col-md-4">
                     <div style="cursor: pointer;" class="card card-icon mb-4" type="button" data-toggle="modal"
+                    data-target="#newCustomerOrder">
+                        <div class="card-body text-center">
+                            <i class="i-Money-2"></i>
+                            <p class="text-muted mt-2 mb-2"></p>
+                            <p class="lead text-22 m-0">Add Customer Order</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div style="cursor: pointer;" class="card card-icon mb-4" type="button" data-toggle="modal"
                     data-target="#newProduct">
                         <div class="card-body text-center">
-                            <i class="i-Checkout-Basket"></i>
+                            <i class="i-Data-Upload"></i>
                             <p class="text-muted mt-2 mb-2"></p>
-                            <p class="lead text-22 m-0">Add Product</p>
+                            <p class="lead text-22 m-0">Add Daily Production</p>
                         </div>
                     </div>
                 </div>
@@ -273,12 +304,55 @@
                     </div>
                 </div>
                 <div class="col-md-4">
+                    <div style="cursor: pointer;" class="card card-icon mb-4" type="button" data-toggle="modal"
+                    data-target="#newMerchant">
+                        <div class="card-body text-center">
+                            <i class="i-Business-Man"></i>
+                            <p class="text-muted mt-2 mb-2"></p>
+                            <p class="lead text-22 m-0">Add Merchant</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <a href="purchased-stock.html">
+                        <div class="card card-icon-big mb-4">
+                            <div class="card-body text-center">
+                                <i class="i-Checkout-Basket"></i>
+                                <p class="text-muted mt-2 mb-2"></p>
+                                <p class="lead text-22 mb-0">Purchased Inventory</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="customers-order.html">
+                        <div class="card card-icon mb-4">
+                            <div class="card-body text-center">
+                                <i class="i-Money-2"></i>
+                                <p class="text-muted mt-2 mb-2"></p>
+                                <p class="lead text-22 m-0">Customers Ordered</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="./production.html">
+                        <div class="card card-icon-big mb-4">
+                            <div class="card-body text-center">
+                                <i class="i-Data-Upload"></i>
+                                <p class="text-muted mt-2 mb-2"></p>
+                                <p class="lead text-22 mb-0">Production Inventory</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
                     <a href="./customers.html">
                         <div class="card card-icon-big mb-4">
                             <div class="card-body text-center">
                                 <i class="i-Administrator"></i>
                                 <p class="text-muted mt-2 mb-2"></p>
-                                <p class="lead text-22 mb-0">Customer's</p>
+                                <p class="lead text-22 mb-0">Customers info</p>
                             </div>
                         </div>
                     </a>
@@ -289,29 +363,7 @@
                             <div class="card-body text-center">
                                 <i class="i-Business-Man"></i>
                                 <p class="text-muted mt-2 mb-2"></p>
-                                <p class="lead text-22 m-0">Merchant's</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="./employee.html">
-                        <div class="card card-icon mb-4">
-                            <div class="card-body text-center">
-                                <i class="i-Administrator"></i>
-                                <p class="text-muted mt-2 mb-2"></p>
-                                <p class="lead text-22 m-0">Employee's info</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="billing-history.html">
-                        <div class="card card-icon mb-4">
-                            <div class="card-body text-center">
-                                <i class="i-Money-2"></i>
-                                <p class="text-muted mt-2 mb-2"></p>
-                                <p class="lead text-22 m-0">Ordered</p>
+                                <p class="lead text-22 m-0">Merchants info</p>
                             </div>
                         </div>
                     </a>
@@ -328,12 +380,12 @@
                     </a>
                 </div>
                 <div class="col-md-4">
-                    <a href="stock-list.html">
-                        <div class="card card-icon-big mb-4">
+                    <a href="./employee.html">
+                        <div class="card card-icon mb-4">
                             <div class="card-body text-center">
-                                <i class="i-Checkout-Basket"></i>
+                                <i class="i-Administrator"></i>
                                 <p class="text-muted mt-2 mb-2"></p>
-                                <p class="lead text-22 mb-0">Stock Inventory</p>
+                                <p class="lead text-22 m-0">Employees info</p>
                             </div>
                         </div>
                     </a>
@@ -729,7 +781,7 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="newProductLabel">New Product</h5>
+                    <h5 class="modal-title" id="newProductLabel">New Daily Production</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
@@ -739,20 +791,11 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="formGroupExampleInput6">Serial Number</label>
-                                    <input type="text" class="form-control" id="formGroupExampleInput6"
-                                        placeholder="Enter Serial Number">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
                                     <label for="formGroupExampleInput7">Product Name</label>
                                     <input type="text" class="form-control" id="formGroupExampleInput7"
                                         placeholder="Enter Product Name">
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="quantity-2">Quantity</label>
@@ -760,12 +803,45 @@
                                         placeholder="Enter quantity">
                                 </div>
                             </div>
+                        </div>
+                        <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="per-price-2">Price Per Quantity</label>
-                                    <input type="number" class="form-control" id="per-price-2" placeholder="Enter Price Per Quantity">
+                                    <label for="warehouse-id">Warehouse ID</label>
+                                    <input type="number" class="form-control" id="warehouse-id"
+                                        placeholder="Enter Warehouse ID">
                                 </div>
                             </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="form-group">
+                                            <label for="customerName">
+                                                <p class="m-0">Daying</p>
+                                            </label>
+                                            <label class="checkbox checkbox-dark mt-2">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <div class="form-group">
+                                            <label for="color-1">Select Product Color</label>
+                                            <select id="color-1" class="form-control">
+                                                <option>Product Color</option>
+                                                <option>White</option>
+                                                <option>Black</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" class="form-control" id="date"
+                                placeholder="Enter Date">
                         </div>
                     </form>
                 </div>
@@ -887,6 +963,57 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="newMerchant" tabindex="-1" role="dialog"
+        aria-labelledby="newMerchantLabel" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="newMerchantLabel">Add Merchant</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="merchantName">Name:</label>
+                            <input type="text" class="form-control" id="merchantName"
+                                placeholder="Enter Merchant Name">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="merchantPhoneNumber">Phone:</label>
+                                    <input type="number" class="form-control" id="merchantPhoneNumber"
+                                        placeholder="Enter Phone Number">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="merchantEmail">Email:</label>
+                                    <input type="email" class="form-control" id="merchantEmail" placeholder="Enter Office Email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="merchant-cnic-number">CNIC</label>
+                            <input type="text" class="form-control" id="merchant-cnic-number"
+                                placeholder="Enter CNIC Number">
+                        </div>
+                        <div class="form-group">
+                            <label for="merchantAddress">Address</label>
+                            <input type="text" class="form-control" id="merchantAddress"
+                                placeholder="Enter Company Address">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Add Merchant</button>
                 </div>
             </div>
         </div>
@@ -1165,28 +1292,12 @@
                 <div class="modal-body">
                     <form>
                         <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="formGroupExampleInput19">Serial Number</label>
-                                    <input type="text" class="form-control" id="formGroupExampleInput19"
-                                        placeholder="Enter Serial Number" value="V-11">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="quantity-3">Quantity</label>
-                                    <input type="number" class="form-control" id="quantity-3"
-                                        placeholder="Enter quantity" value="22">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
                             <div class="col-md-9">
                                 <div class="form-group">
                                     <label for="updateCustomerNameList">Select Customer Name</label>
                                     <select id="updateCustomerNameList" class="form-control" disabled style="cursor: no-drop;">
                                         <option>Customer Name</option>
-                                        <option selected>Aslam</option>
+                                        <option selected>Pel</option>
                                         <option>Nadeem</option>
                                         <option>Customer 3</option>
                                     </select>
@@ -1198,8 +1309,8 @@
                                         <p class="m-0"></p>
                                     </label>
                                     <button class="d-block btn btn-primary ml-auto" type="button" data-toggle="collapse"
-                                        data-target="#disabledCollapseExample" aria-expanded="false"
-                                        aria-controls="disabledCollapseExample" disabled style="cursor: no-drop;">
+                                        data-target="#customerDisabledCollapseExample" aria-expanded="false"
+                                        aria-controls="customerDisabledCollapseExample" disabled style="cursor: no-drop;">
                                         Add Customer
                                     </button>
                                 </div>
@@ -1207,39 +1318,40 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="collapse" id="disabledCollapseExample">
+                                <div class="collapse" id="customerDisabledCollapseExample">
                                     <div class="card card-body">
                                         <div class="card-body">
-                                            <div class="form-group">
-                                                <label for="formGroupExampleInput20">Customer:</label>
-                                                <input type="text" class="form-control" id="formGroupExampleInput20"
-                                                    placeholder="Enter Customer Name">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label for="ntnNumber">NTN:</label>
+                                                    <input type="number" class="form-control" id="ntnNumber" placeholder="Enter NTN Number">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="customer-name">Name:</label>
+                                                    <input type="text" class="form-control" id="customer-name" placeholder="Enter Customer Name">
+                                                </div>
                                             </div>
                                             <div class="form-group">
-                                                <label for="formGroupExampleInput21">Company:</label>
-                                                <input type="text" class="form-control" id="formGroupExampleInput21"
-                                                    placeholder="Enter Company Name">
+                                                <label for="formGroupExampleInput9">Company:</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput9" placeholder="Enter Company Name">
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label for="phone-5">Phone:</label>
-                                                        <input type="number" class="form-control" id="phone-5"
-                                                            placeholder="Enter Phone Number">
+                                                        <label for="phone-2">Phone:</label>
+                                                        <input type="number" class="form-control" id="phone-2" placeholder="Enter Phone Number">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label for="officePhone-1">Office Phone:</label>
-                                                        <input type="number" class="form-control" id="officePhone-1"
-                                                            placeholder="Enter Office Phone Number">
+                                                        <label for="office-email">Email:</label>
+                                                        <input type="number" class="form-control" id="office-email" placeholder="Enter Office Phone Number">
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label for="formGroupExampleInput22">Address</label>
-                                                <input type="text" class="form-control" id="formGroupExampleInput22"
-                                                    placeholder="Enter Company Address">
+                                                <label for="formGroupExampleInput10">Address</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput10" placeholder="Enter Company Address">
                                             </div>
                                             <button class="btn btn-secondary" type="button" data-toggle="collapse"
                                                 data-target="#collapseExample" aria-expanded="false"
@@ -1251,6 +1363,44 @@
                                                 aria-controls="collapseExample">
                                                 Add Customer
                                             </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="updateCustomerNameList">Select Product Name</label>
+                                    <select id="updateCustomerNameList" class="form-control">
+                                        <option>Product Name</option>
+                                        <option selected>Niddle</option>
+                                        <option>Product 2</option>
+                                        <option>Product 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="form-group">
+                                            <label for="customerName">
+                                                <p class="m-0">Daying</p>
+                                            </label>
+                                            <label class="checkbox checkbox-dark mt-2">
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <div class="form-group">
+                                            <label for="color-1">Select Product Color</label>
+                                            <select id="color-1" class="form-control">
+                                                <option>Product Color</option>
+                                                <option selected>White</option>
+                                                <option>Black</option>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
@@ -1446,7 +1596,7 @@
                                 <div class="form-group">
                                     <label for="formGroupExampleInput25">Serial Number:</label>
                                     <input type="text" class="form-control" id="formGroupExampleInput25"
-                                        placeholder="Enter Product Serial Number" value="Q-11">
+                                        placeholder="Enter Product Serial Number" value="Q-11" disabled>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -1461,22 +1611,40 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="quantity-4">Quantity:</label>
-                                    <input type="number" class="form-control" id="quantity-4"
+                                    <input type="text" class="form-control" id="quantity-4"
                                         placeholder="Enter Product Quantity" value="22">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="perPrice">Price Per Quantity (Rs):</label>
-                                    <input type="number" class="form-control" id="perPrice"
-                                        placeholder="Enter Per Quantity Price" value="1600">
+                                    <label for="warehouseID">Warehouse ID:</label>
+                                    <input type="text" class="form-control" id="warehouseID"
+                                        placeholder="Enter Warehouse ID" value="PG-11">
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label for="total-price">Total Price (Rs):</label>
-                            <input type="number" class="form-control" id="total-price"
-                                placeholder="Enter Total Price" value="4600">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="color-1">Select Product Color</label>
+                                    <select id="color-1" class="form-control">
+                                        <option>Product Color</option>
+                                        <option>White</option>
+                                        <option selected>Black</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="customerName">
+                                        <p class="m-0">Daying</p>
+                                    </label>
+                                    <label class="checkbox checkbox-dark mt-2">
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                     </form>
                 </div>
