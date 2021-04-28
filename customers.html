@@ -413,7 +413,7 @@
                 <div class="modal-body card-body">
                     <form class="card-body">
                         <div class="row">
-                            <div class="col-md-9">
+                            <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="customerNameList">Select Merchant</label>
                                     <select id="customerNameList" class="form-control">
@@ -425,15 +425,23 @@
                                 </div>
                             </div>
                             <div class="col-md-3">
-                                <div class="form-group float-right">
+                                <div class="form-group">
                                     <label for="customerName">
                                         <p class="m-0"></p>
                                     </label>
-                                    <button class="d-block btn btn-primary ml-auto" type="button" data-toggle="collapse"
+                                    <button class="d-block btn btn-primary mx-auto" type="button" data-toggle="collapse"
                                         data-target="#collapseExample" aria-expanded="false"
                                         aria-controls="collapseExample">
                                         Add Merchant
                                     </button>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group float-right">
+                                    <label for="customerName">
+                                        <p class="m-0">Date</p>
+                                    </label>
+                                    <input type="date" class="form-control" id="date" placeholder="Enter Date">
                                 </div>
                             </div>
                         </div>
@@ -535,7 +543,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-9">
+                            <div class="col-md-3">
                                 <div class="form-group">
                                     <label for="box-weight-1">Box Weight:</label>
                                     <input type="number" class="form-control" id="box-weight-1"
@@ -552,16 +560,14 @@
                                     </select>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-3">
                                 <div class="form-group">
                                     <label for="quantity-1">Quantity</label>
                                     <input type="number" class="form-control" id="quantity-1"
                                         placeholder="Enter quantity">
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-3">
                                 <div class="form-group">
                                     <label for="per-price-1">Price Per Quantity</label>
                                     <input type="number" class="form-control" id="per-price-1"
@@ -570,31 +576,20 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-sm-4">
-                                <div class="form-group">
-                                    <label for="date">Date</label>
-                                    <input type="date" class="form-control" id="date" placeholder="Enter Date">
-                                </div>
-                            </div>
-                            <div class="col-md-5">
+                            <div class="col-md-12">
                                 <div class="form-group">
                                     <label for="total-price-1">Total Price</label>
                                     <input type="number" class="form-control" id="total-price-1"
                                         placeholder="Enter Total Price">
                                 </div>
                             </div>
-                            <div class="col-md-3">
-                                <div class="form-group float-right">
-                                    <label for="customerName">
-                                        <p class="m-0"></p>
-                                    </label>
-                                    <button class="d-block btn btn-primary ml-auto" type="button" data-toggle="collapse"
-                                        data-target="#paymentMethodAddCollapseExample" aria-expanded="false"
-                                        aria-controls="paymentMethodAddCollapseExample">
-                                        Add Payment
-                                    </button>
-                                </div>
-                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button class="d-block btn btn-primary" type="button" data-toggle="collapse"
+                                data-target="#paymentMethodAddCollapseExample" aria-expanded="false"
+                                aria-controls="paymentMethodAddCollapseExample">
+                                Add Payment
+                            </button>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
@@ -757,7 +752,7 @@
                 <div class="modal-body card-body">
                     <form class="card-body">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-5">
                                 <div class="form-group">
                                     <label for="productName">Product Name:</label>
                                     <select id="productName" class="form-control">
@@ -769,24 +764,50 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="form-group">
                                     <label for="productQuantity">Product Quantity(Kg)</label>
                                     <input type="number" class="form-control" id="productQuantity"
                                         placeholder="Enter Quantity">
                                 </div>
                             </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="date">Date</label>
+                                    <input type="date" class="form-control" id="date" placeholder="Enter Date">
+                                </div>
+                            </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="form-group">
                                     <label for="pricePerQuantity">Price Per Quantity(Rs)</label>
                                     <input type="number" class="form-control" id="pricePerQuantity"
                                         placeholder="Enter Price Per Quantity">
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="weight-type-1">Select Weight Type:</label>
+                                    <select id="weight-type-1" class="form-control">
+                                        <option>Kgs / Pounds</option>
+                                        <option>Kgs</option>
+                                        <option>Pounds</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
                                 <div class="row">
+                                    <div class="col-sm-9">
+                                        <div class="form-group">
+                                            <label for="color-1">Select Product Color</label>
+                                            <select id="color-1" class="form-control">
+                                                <option>Product Color</option>
+                                                <option>White</option>
+                                                <option>Black</option>
+                                            </select>
+                                        </div>
+                                    </div>
                                     <div class="col-sm-3">
                                         <div class="form-group">
                                             <label for="customerName">
@@ -798,45 +819,24 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="col-sm-9">
-                                        <div class="form-group">
-                                            <label for="color-1">Select Product Color</label>
-                                            <select id="color-1" class="form-control">
-                                                <option>Product Color</option>
-                                                <option>White</option>
-                                                <option>Black</option>
-                                            </select>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-sm-4">
-                                <div class="form-group">
-                                    <label for="date">Date</label>
-                                    <input type="date" class="form-control" id="date" placeholder="Enter Date">
-                                </div>
-                            </div>
-                            <div class="col-md-5">
+                            <div class="col-md-12">
                                 <div class="form-group">
                                     <label for="total-price-1">Total Price</label>
                                     <input type="number" class="form-control" id="total-price-1"
                                         placeholder="Enter Total Price">
                                 </div>
                             </div>
-                            <div class="col-md-3">
-                                <div class="form-group float-right">
-                                    <label for="customerName">
-                                        <p class="m-0"></p>
-                                    </label>
-                                    <button class="d-block btn btn-primary ml-auto" type="button" data-toggle="collapse"
-                                        data-target="#customerOrderPaymentMethodAddCollapse" aria-expanded="false"
-                                        aria-controls="customerOrderPaymentMethodAddCollapse">
-                                        Add Payment
-                                    </button>
-                                </div>
-                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button class="d-block btn btn-primary" type="button" data-toggle="collapse"
+                                data-target="#customerOrderPaymentMethodAddCollapse" aria-expanded="false"
+                                aria-controls="customerOrderPaymentMethodAddCollapse">
+                                Add Payment
+                            </button>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
@@ -999,18 +999,25 @@
                 <div class="modal-body">
                     <form>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-5">
                                 <div class="form-group">
                                     <label for="formGroupExampleInput7">Product Name</label>
                                     <input type="text" class="form-control" id="formGroupExampleInput7"
                                         placeholder="Enter Product Name">
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="form-group">
                                     <label for="quantity-2">Quantity</label>
                                     <input type="number" class="form-control" id="quantity-2"
                                         placeholder="Enter quantity">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="date">Date</label>
+                                    <input type="date" class="form-control" id="date"
+                                        placeholder="Enter Date">
                                 </div>
                             </div>
                         </div>
@@ -1048,11 +1055,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label for="date">Date</label>
-                            <input type="date" class="form-control" id="date"
-                                placeholder="Enter Date">
-                        </div>
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -1073,7 +1075,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form class="card-body">
                         <div class="row">
                             <div class="col-md-6">
                                 <label for="ntnNumber">NTN:</label>
@@ -1132,7 +1134,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form class="card-body">
                         <div class="form-group">
                             <label for="formGroupExampleInput11">Full Name:</label>
                             <input type="text" class="form-control" id="formGroupExampleInput11"
@@ -1188,7 +1190,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form class="card-body">
                         <div class="form-group">
                             <label for="merchantName">Name:</label>
                             <input type="text" class="form-control" id="merchantName"
@@ -1689,26 +1691,29 @@
                                             <thead class="bg-gray-300">
                                                 <tr>
                                                     <th scope="col">#</th>
-                                                    <th scope="col">Item Name</th>
-                                                    <th scope="col">Unit Price</th>
-                                                    <th scope="col">Unit</th>
-                                                    <th scope="col">Cost</th>
+                                                    <th scope="col">Serial Number</th>
+                                                    <th scope="col">Name</th>
+                                                    <th scope="col">Quantity</th>
+                                                    <th scope="col">Price Per Quantity(Rs)</th>
+                                                    <th scope="col">Total Price(Rs)</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <th scope="row">1</th>
+                                                    <td>300</td>
                                                     <td>Product 1</td>
                                                     <td>300</td>
-                                                    <td>2</td>
-                                                    <td>600</td>
+                                                    <td>2200</td>
+                                                    <td>10600</td>
                                                 </tr>
                                                 <tr>
-                                                    <th scope="row">1</th>
+                                                    <th scope="row">2</th>
+                                                    <td>V-10</td>
                                                     <td>Product 2</td>
+                                                    <td>100</td>
                                                     <td>200</td>
-                                                    <td>3</td>
-                                                    <td>600</td>
+                                                    <td>10600</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -1790,26 +1795,29 @@
                                             <thead class="bg-gray-300">
                                                 <tr>
                                                     <th scope="col">#</th>
-                                                    <th scope="col">Item Name</th>
-                                                    <th scope="col">Unit Price</th>
-                                                    <th scope="col">Unit</th>
-                                                    <th scope="col">Cost</th>
+                                                    <th scope="col">Serial Number</th>
+                                                    <th scope="col">Name</th>
+                                                    <th scope="col">Quantity</th>
+                                                    <th scope="col">Price Per Quantity(Rs)</th>
+                                                    <th scope="col">Total Price(Rs)</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <th scope="row">1</th>
+                                                    <td>300</td>
                                                     <td>Product 1</td>
                                                     <td>300</td>
-                                                    <td>2</td>
-                                                    <td>600</td>
+                                                    <td>2200</td>
+                                                    <td>10600</td>
                                                 </tr>
                                                 <tr>
-                                                    <th scope="row">1</th>
+                                                    <th scope="row">2</th>
+                                                    <td>V-10</td>
                                                     <td>Product 2</td>
+                                                    <td>100</td>
                                                     <td>200</td>
-                                                    <td>3</td>
-                                                    <td>600</td>
+                                                    <td>10600</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -2261,6 +2269,7 @@
                                                     <thead class="bg-gray-300">
                                                         <tr>
                                                             <th scope="col" class="text-center">#</th>
+                                                            <th scope="col" class="text-center">Date</th>
                                                             <th scope="col" class="text-center">Cheque From</th>
                                                             <th scope="col">Cheque Number</th>
                                                             <th scope="col" class="text-center">Cheque To</th>
@@ -2270,6 +2279,23 @@
                                                     <tbody>
                                                         <tr>
                                                             <td class="text-center">1</td>
+                                                            <td class="text-center">24-12-2020</td>
+                                                            <td class="text-center">Ahmed</td>
+                                                            <td>PK123000000000000000000</td>
+                                                            <td class="text-center">Abdul Rehamn</td>
+                                                            <td class="text-center">74000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">2</td>
+                                                            <td class="text-center">24-2-2021</td>
+                                                            <td class="text-center">Ahmed</td>
+                                                            <td>PK123000000000000000000</td>
+                                                            <td class="text-center">Abdul Rehamn</td>
+                                                            <td class="text-center">74000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">3</td>
+                                                            <td class="text-center">04-03-2021</td>
                                                             <td class="text-center">Ahmed</td>
                                                             <td>PK123000000000000000000</td>
                                                             <td class="text-center">Abdul Rehamn</td>
